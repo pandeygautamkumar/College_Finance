@@ -1,0 +1,24 @@
+*{
+   margin:0;
+   padding: 0;
+}
+
+body{
+   background-image: url("/views/image/add.jpg");
+   background-size:250%;
+   background-position: -400px 0px;
+}
+h2{
+   text-align: center;
+   padding: 20px;
+   font-family: 'Times New Roman';
+}
+
+div.modal-header{
+   background-color: rbga(0,0,0,0.5);
+   color:#fff;
+}
+div.register{
+   width: 400px;
+   margin: 20px auto 0px auto;
+}

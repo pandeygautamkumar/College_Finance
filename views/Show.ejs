@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Show Staff/Faculty Details</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <style type="text/css">
+        table, td, th {  
+        border: 1px solid #ddd;
+        text-align: left;
+    }
+    
+    table {
+        border-collapse: collapse;
+        width: 50%;
+        
+    }
+    .table-data{
+        position: relative;
+        left:50px;
+        top:50px;
+    }
+    th, td {
+        padding: 15px;
+    }
+</style>
+<title>Show All Faculty/Staff List</title>
+</head>
+<body>
+    <div class="table-data">
+    <table border="1" >
+        <tr>
+            <th>S.N.</th>
+            <th>Name</th>
+            <th>Designation</th>
+            <th>Email</th>
+            <th>Mobile Number</th>
+            <th>Userid</th>
+            <th>Password</th>
+        </tr>
+        
+        <%
+        if(Emp.length!=0){
+        var i=1;
+        Emp.forEach(function(e){
+        %>
+        <tr>
+            <td><%=i; %></td>
+            <td><%=e.firstname %>&nbsp;<%=e.middlename %>&nbsp;<%= e.lastname %></td>
+            <td><%= e.designation %></td>
+            <td><%=e.email %></td>
+            <td><%=e.mobilenumber %></td>
+            <td><%=e.userid %></td>
+            <td><%=e.password %></td>
+        </tr>
+        <%  i++; }) %>
+        <% } else{ %>
+            <tr>
+                <td colspan="7">No Data Found</td>
+            </tr>
+        <% } %>
+    </table>
+    </div>
+</body>
+</html>

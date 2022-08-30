@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="/views/css/addfaculty.css">
+    <title>Add Faculty Detail</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <div class="modal-header">
+        <div class="register">
+            <h2>Register Faculty Details</h2>
+            <form action="/addFaculty" method="post">
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label>First Name:</label><br>
+                    <input type="text" name="firstname" class="form-control" placeholder="Enter First Name of faculty"/>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label>Middle Name:</label><br>
+                    <input type="text" name="middlename" class="form-control" placeholder="Enter Middle Name of Faculty"/>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label>Last Name:</label><br>
+                      <input type="text" name="lastname" class="form-control" placeholder="Enter Last Name of faculty"/>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label>Mobile No:</label><br>
+                        <input type="number"  class="form-control" name="mobilenumber" placeholder="Enter Mobile Number"/>
+                    </div>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label>Email:</label><br>
+                        <input type="email" name="email" class="form-control" placeholder="Enter Email"/>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label>Gender:</label><br>
+                        &nbsp;&nbsp;&nbsp;
+                        <input type="radio" name="gender" id="male"/>
+                        &nbsp;
+                        <span id="male">Male</span>
+                        &nbsp;&nbsp;&nbsp;
+                        <input type="radio" name="gender" id="female"/>
+                        &nbsp;
+                        <span id="female">Female</span>
+                        <br><br>
+                    </div>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label>Designation:</label><br>
+                        <input type="text" class="form-control" name="designation" placeholder="Enter Designation"/>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label>DOB:</label><br>
+                        <input type="date" name="dob" class="form-control" placeholder="Enter Date of Birth"/>
+                    </div>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label>Date of Joining:</label><br>
+                         <input type="date" name="doj" class="form-control" placeholder="Enter Date of Joining of Faculty"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Address:</label><br>
+                    <input type="text" name="address" class="form-control" placeholder="Enter Address of faculty"/>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label>Account No:</label><br>
+                        <input type="text" name="accountno" class="form-control" placeholder="Enter Account Number of Faculty"/>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label>IFSC Code:</label><br>
+                         <input type="text" name="ifsccode" class="form-control" placeholder="Enter IFSC Code"/>
+                    </div>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label>Bank Name:</label><br>
+                        <input type="text" name="bankname" class="form-control" placeholder="Enter Bank Name"/>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label>Branch Address:</label><br>
+                        <input type="text" name="branchaddress" class="form-control" placeholder="Enter Branch Address"/>
+                    </div>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label>Basic Salary:</label><br>
+                        <input type="number" name="basicsalary" class="form-control" placeholder="Enter Basic Salary of Faculty"/>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label>TA:</label><br>
+                        <input type="number" name="ta" class="form-control" placeholder="Enter TA in Percentage"/>
+                    </div>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label>DA:</label><br>
+                        <input type="number" name="da" class="form-control" placeholder="Enter DA in Percentage"/>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label>HRA:</label><br>
+                        <input type="number" name="hra" class="form-control" placeholder="Enter HRA in Percentage"/>
+                    </div>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label>Userid:</label><br>
+                        <input type="text" name="userid" class="form-control" placeholder="Enter Userid for Faculty"/>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label>Password:</label><br>
+                        <input type="text" name="password" class="form-control" placeholder="Enter Password for Faculty"/>
+                    </div>
+                  </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
